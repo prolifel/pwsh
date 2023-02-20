@@ -8,8 +8,8 @@
 
 ### content
 
-| **command** | **description**  | **how to use?**                         |
-| ----------- | ---------------- | --------------------------------------- |
-| `mati`      | shutdown your pc | `$ mati` equals to `$ shutdown -s -t 0` |
+| command | description      | how to use?                                                        |
+| ------- | ---------------- | ------------------------------------------------------------------ |
+| `mati`  | shutdown your pc | `$ mati` equals to `$ shutdown -s -t 0`<br>help: `$ get-help mati` |
 
 _more coming soon_
