@@ -10,9 +10,9 @@
 
 | status | command | description      | how to use?                                                                    |
 | ------ | ------- | ---------------- | ------------------------------------------------------------------------------ |
-| [x]    | `mati`  | shutdown your pc | `$ mati` equals to `$ shutdown -s -t 0`<br>help: `$ get-help mati`             |
-| []     | `ga`    | git: add         | `$ ga` equals to `$ git add .`<br>help: `$ get-help ga`                        |
-| []     | `gc`    | git: commit      | `$ gc` equals to `$ git commit -s`<br>help: `$ get-help gc`                    |
-| []     | `gp`    | git: push        | `$ gp` equals to `$ git push origin {current_branch}`<br>help: `$ get-help gp` |
+| 🟢     | `mati`  | shutdown your pc | `$ mati` equals to `$ shutdown -s -t 0`<br>help: `$ get-help mati`             |
+| ⚫     | `ga`    | git: add         | `$ ga` equals to `$ git add .`<br>help: `$ get-help ga`                        |
+| ⚫     | `gc`    | git: commit      | `$ gc` equals to `$ git commit -s`<br>help: `$ get-help gc`                    |
+| ⚫     | `gp`    | git: push        | `$ gp` equals to `$ git push origin {current_branch}`<br>help: `$ get-help gp` |
 
 _more coming soon_
