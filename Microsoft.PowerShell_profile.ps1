@@ -9,4 +9,4 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineKeyHandler -Key Ctrl+f -Function ForwardChar
 
-# Import-Module -Name mati
+Import-Module -Name utils/mati
