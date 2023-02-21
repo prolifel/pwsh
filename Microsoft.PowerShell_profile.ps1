@@ -10,3 +10,4 @@ Set-PSReadLineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineKeyHandler -Key Ctrl+f -Function ForwardChar
 
 Import-Module -Name utils/mati
+Import-Module -Name utils/ga
