@@ -9,5 +9,11 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
 Set-PSReadLineKeyHandler -Key Ctrl+f -Function ForwardChar
 
+# remove gc alias
+del alias:gc -Force
+del alias:gp -Force
+
 Import-Module -Name utils/mati
 Import-Module -Name utils/ga
+Import-Module -Name utils/gc
+Import-Module -Name utils/gp
