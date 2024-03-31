@@ -20,3 +20,7 @@ Import-Module -Name utils/gp
 Import-Module -Name utils/touch
 Import-Module -Name utils/top
 Import-Module -Name utils/pg
+Import-Module -Name utils/e # explorer
+Import-Module -Name utils/g # git
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) })

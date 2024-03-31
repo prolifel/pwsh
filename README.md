@@ -21,5 +21,6 @@
 | ⚫     | `gf`    | git: fetch                       | `$ gf` equals to `$ git fetch origin`. <br>help: `$ get-help gpl`                                                                                 |
 | 🟡     | -       | background changer based on time | 🟡                                                                                                                                                |
 | 🟢     | `pg`    | ping google.com -t               | 🟢                                                                                                                                                |
+| 🟢     | `e`     | exploer.exe .                    | 🟢                                                                                                                                                |
 
 _more coming soon_

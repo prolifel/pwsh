@@ -1,12 +1,12 @@
 # https://yvez.be/2019/09/01/lets-create-top-for-powershell/
 function Get-MetricBar {
- 
+
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory = $True, Position = 0, ValueFromPipelineByPropertyName)]
         [Alias('Key')]
         $Metric,
-       
+
         [Parameter(Mandatory = $True, Position = 1, ValueFromPipelineByPropertyName)]
         [Alias('Value')]
         $MetricValue
@@ -37,16 +37,16 @@ Function Get-Graph {
 
     $Datapoints | ForEach-Object {
         $DatapointRounded = [Math]::Floor($_ / 10)
-        
+
         1..$DatapointRounded | ForEach-Object {
             $Array[$Counter, $_] = 1
         }
         $Counter++
     }
- 
+
     # Draw graph by drawing each row line-by-line, top-to-bottom.
     ForEach ($RowHeigth in (10..0)) {
-        
+
         #Assembly of each row.
         $Row = ''
 
@@ -56,7 +56,7 @@ Function Get-Graph {
             }
             else {
                 $Row = [string]::Concat($Row, '▓')
-            }   
+            }
         }
 
         # To color the graph depending upon the datapoint value.
@@ -84,20 +84,20 @@ function top {
         }
 
         $LoadHistory += $CurrentLoad
- 
+
 
         # Reset cursor and overwrite prior output
         $host.UI.RawUI.CursorPosition = @{x = 0; y = 1 }
 
         # Output on screen
         Get-Graph -Datapoints ($LoadHistory."CPU Load" | Select-Object -Last $BufferSizeWidth)
-        
+
         Write-host ""
-        
+
         $CurrentLoad.GetEnumerator() | Get-MetricBar | Write-Host -ForegroundColor "DarkCyan"
-        
+
         Write-host ""
-        
+
         Get-Process | Sort-Object CPU -desc | Select-Object -first 5 | Format-Table -RepeatHeader
     }
 }
