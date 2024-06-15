@@ -3,6 +3,8 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\spaceship.omp.json" | Invok
 Import-Module -Name Terminal-Icons
 
 Set-Alias -Name grep -Value Select-String
+Set-Alias -Name g -Value git
+Set-Alias -Name gti -Value git
 
 Set-PSReadLineOption -PredictionSource History
 # Set-PSReadLineKeyHandler -Key Tab -Function ForwardChar
@@ -17,6 +19,8 @@ Import-Module -Name utils/mati
 Import-Module -Name utils/ga
 Import-Module -Name utils/gc
 Import-Module -Name utils/gp
+Import-Module -Name utils/gf
+Import-Module -Name utils/gpl
 Import-Module -Name utils/touch
 Import-Module -Name utils/top
 Import-Module -Name utils/pg
