@@ -9,6 +9,7 @@
 1. `bat` [here](https://terminaltrove.com/bat/)
 1. `eddy` [here](https://github.com/70sh1/eddy)
 1. `yai` [here](https://github.com/ekkinox/yai)
+1. `powertoys` [here](https://github.com/microsoft/PowerToys)
 
 ### content
 
