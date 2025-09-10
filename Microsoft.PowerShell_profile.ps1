@@ -27,4 +27,10 @@ Import-Module -Name utils/pg
 Import-Module -Name utils/e # explorer
 Import-Module -Name utils/g # git
 
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+# wtf needs gawk
+# scoop install main/gawk
+Import-Module -Name utils/wtf # wtf
+
+$Env:PSModulePath += ";C:\Users\cleme\posh"
+
+# Invoke-Expression (& { (zoxide init powershell | Out-String) })
